@@ -1,10 +1,11 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
+import Navbar from './components/navbar/Navbar';
 
 // exposes classname for font
-const font = Nunito({ 
-  subsets: ['latin'], 
+const font = Nunito({
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }
