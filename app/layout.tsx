@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
 import Navbar from './components/navbar/Navbar';
+import Modal from './components/modals/Modal';
 
 // exposes classname for font
 const font = Nunito({
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
+        <Modal title="hello wurld" isOpen />
         <Navbar />
         {children}
       </body>
