@@ -20,4 +20,5 @@ Tech stacks used:
     Mongoose
     Prism
     Cloudinary
+    React-icons
 
