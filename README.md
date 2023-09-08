@@ -21,4 +21,7 @@ Tech stacks used:
     Prism
     Cloudinary
     React-icons
+    React-hook-form
+    React-hot-toast
+    Zustand
 

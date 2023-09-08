@@ -5,6 +5,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 import MenuItem from "./MenuItem";
 import Avatar from "../Avatar";
+import useRegisterModal from "@/app/hooks/useRegisterModal";
 
 interface UserMenuProps {
     currentUser?: null
@@ -13,7 +14,7 @@ interface UserMenuProps {
 const UserMenu: React.FC<UserMenuProps> = ({
     currentUser
 }) => {
-    
+    const registerModal = useRegisterModal();
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -117,7 +118,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                                 />
                                 <MenuItem
                                     label="Sign up"
-                                    onClick={() => {}}
+                                    onClick={registerModal.onOpen}
                                 />
                             </>
                         )}
