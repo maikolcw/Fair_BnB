@@ -4,6 +4,7 @@ import { Nunito } from 'next/font/google'
 import Navbar from './components/navbar/Navbar';
 import RegisterModal from './components/modals/RegisterModal';
 import ToasterProvider from './providers/ToasterProvider';
+import LoginModal from './components/modals/LoginModal';
 
 // exposes classname for font
 const font = Nunito({
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <ToasterProvider />
+        <LoginModal />
         <RegisterModal />
         <Navbar />
         {children}
