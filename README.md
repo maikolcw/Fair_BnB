@@ -18,8 +18,10 @@ Tech stacks used:
     TypeScript
     Tailwindcss
     Mongoose
-    Prism
+    Prisma
     Cloudinary
+    Next-auth
+    Bcrypt
     React-icons
     React-hook-form
     React-hot-toast
