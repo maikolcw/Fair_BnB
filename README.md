@@ -25,5 +25,6 @@ Tech stacks used:
     React-icons
     React-hook-form
     React-hot-toast
+    Query-string
     Zustand
 
