@@ -26,5 +26,6 @@ Tech stacks used:
     React-hook-form
     React-hot-toast
     Query-string
+    World-countries
     Zustand
 
