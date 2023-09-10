@@ -27,5 +27,6 @@ Tech stacks used:
     React-hot-toast
     Query-string
     World-countries
+    Leaflet
     Zustand
 
