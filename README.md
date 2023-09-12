@@ -25,6 +25,7 @@ Tech stacks used:
     React-icons
     React-hook-form
     React-hot-toast
+    React-date-range
     Query-string
     World-countries
     Leaflet
