@@ -26,6 +26,7 @@ Tech stacks used:
     React-hook-form
     React-hot-toast
     React-date-range
+    React-spinners
     Query-string
     World-countries
     Leaflet

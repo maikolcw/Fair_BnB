@@ -1,3 +1,4 @@
+import { error } from "console";
 import getCurrentUser from "./actions/getCurrentUser";
 import getListings, { IListingsParams } from "./actions/getListings";
 import Container from "./components/Container";
