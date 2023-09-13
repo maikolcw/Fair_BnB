@@ -1,10 +1,11 @@
-export const dynamic = 'auto';
-import getCurrentUser from "./actions/getCurrentUser";
-import getListings, { IListingsParams } from "./actions/getListings";
-import Container from "./components/Container";
-import EmptyState from "./components/EmptyState";
-import ListingCard from "./components/listings/ListingCard";
+import Container from "@/app/components/Container";
+import ListingCard from "@/app/components/listings/ListingCard";
+import EmptyState from "@/app/components/EmptyState";
 
+import getListings, {
+  IListingsParams
+} from "@/app/actions/getListings";
+import getCurrentUser from "@/app/actions/getCurrentUser";
 
 interface HomeProps {
   searchParams: IListingsParams
@@ -17,7 +18,7 @@ const Home = async ({ searchParams }: HomeProps) => {
   if (listings.length === 0) {
     return (
       <EmptyState showReset />
-    )
+    );
   }
 
   return (
