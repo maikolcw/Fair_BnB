@@ -1,4 +1,4 @@
-import { error } from "console";
+export const dynamic = 'auto';
 import getCurrentUser from "./actions/getCurrentUser";
 import getListings, { IListingsParams } from "./actions/getListings";
 import Container from "./components/Container";
