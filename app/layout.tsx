@@ -9,6 +9,7 @@ import LoginModal from './components/modals/LoginModal';
 import RentModal from './components/modals/RentModal';
 import RegisterModal from './components/modals/RegisterModal';
 import SearchModal from './components/modals/SearchModal';
+import ClientOnly from './components/ClientOnly';
 
 
 // exposes classname for font
@@ -31,12 +32,14 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <ToasterProvider />
-        <SearchModal />
-        <RentModal />
-        <LoginModal />
-        <RegisterModal />
-        <Navbar currentUser={currentUser} />
+        <ClientOnly>
+          <ToasterProvider />
+          <LoginModal />
+          <RegisterModal />
+          <SearchModal />
+          <RentModal />
+          <Navbar currentUser={currentUser} />
+        </ClientOnly>
         <div className="pb-20 pt-28">
           {children}
         </div>
